@@ -13,14 +13,17 @@ class App extends Component {
     const description = "This is description";
     const array = [
       {
+        id : 1,
         title : "Title 1 (One)",
         description : "Description 1 (One)",
       },
       {
+        id : 2,
         title : "Title 2 (Two)",
         description : "Description 2 (Two)",
       },
       {
+        id : 3,
         title : "Title 3 (Three)",
         description : "Description 3 (Three)",
       },
@@ -44,7 +47,7 @@ class App extends Component {
     return (
       <div className="container">
         
-        <Middleware array={array}/>
+        <Middleware name={"Hamza"} array={array}/>
       </div>
     );
   }

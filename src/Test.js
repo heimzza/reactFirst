@@ -4,7 +4,7 @@ import React, { Component } from 'react'
 class Test extends Component {
   render() {
 
-    console.log(this.props)
+    console.log(this.props);
     const{baslik,aciklama} = this.props;
     return (
       <div>
