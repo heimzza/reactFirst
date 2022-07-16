@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Test from './Test';
 import Test2 from './Test2';
+import Middleware from './Middleware'
 
 class App extends Component {
   render() 
@@ -24,20 +25,26 @@ class App extends Component {
         description : "Description 3 (Three)",
       },
     ]
+    // return (
+    //   <div className="container">
+    //     <h1 style={{color:"red"}}>Test</h1>
+    //     <h1>sa</h1>
+    //     <h4>{10 * 5.6}</h4>
+    //     {"uppercase".toUpperCase()}
+    //     {
+    //       isIt ? <p>It is</p> : <p>It's not</p>
+    //     }
+    //     <h5>{number}</h5>
+    //     <Test baslik={array[0].title} aciklama={array[0].description}/>
+    //     <Test baslik={array[1].title} aciklama={array[1].description}/>
+    //     <Test baslik={array[2].title} aciklama={array[2].description}/>
+    //     {/* <Test2/> */}
+    //   </div>
+    // );
     return (
       <div className="container">
-        <h1 style={{color:"red"}}>Test</h1>
-        <h1>sa</h1>
-        <h4>{10 * 5.6}</h4>
-        {"uppercase".toUpperCase()}
-        {
-          isIt ? <p>It is</p> : <p>It's not</p>
-        }
-        <h5>{number}</h5>
-        <Test baslik={array[0].title} aciklama={array[0].description}/>
-        <Test baslik={array[1].title} aciklama={array[1].description}/>
-        <Test baslik={array[2].title} aciklama={array[2].description}/>
-        {/* <Test2/> */}
+        
+        <Middleware array={array}/>
       </div>
     );
   }
