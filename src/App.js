@@ -47,7 +47,7 @@ class App extends Component {
     return (
       <div className="container">
         
-        <Middleware name={"Hamza"} array={array}/>
+        <Middleware array={array}/>
       </div>
     );
   }
