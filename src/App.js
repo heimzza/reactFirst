@@ -22,6 +22,18 @@ const array = [
   },
 ]
 class App extends Component {
+
+  state = {
+    name : "Hamzaa"
+  }
+
+  // constructor(props){ //old es5
+  //   super(props);
+  //   this.state = {
+  //     name : "Hamza"
+  //   }
+  // }
+
   addNews() 
   {
     console.log('Ekledim');
@@ -31,6 +43,14 @@ class App extends Component {
       description:"Eleman eklendi"
     });
     console.log(array);
+  }
+
+  changeName(){
+    this.setState(
+      {
+        name : "Hello set state"
+      }
+    )
   }
   render() {
     const number = 12;
@@ -57,7 +77,9 @@ class App extends Component {
     return (
       <div className="container">
 
-        <Middleware array={array} addNews={this.addNews} />
+        <h1>{this.state.name}</h1>
+        {/* <Middleware array={array} addNews={this.addNews} /> */}
+        <button onClick={this.changeName.bind(this)}>Değiştir</button>
       </div>
     );
   }
