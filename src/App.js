@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
 import './App.css';
-import Test from './Test';
-import Test2 from './Test2';
-import Middleware from './Middleware'
+import Counter from './Counter';
+import Footer from './Footer';
+// import Test from './Test';
+// import Test2 from './Test2';
+// import Middleware from './Middleware'
 
-const array = [
-  {
-    id: 1,
-    title: "Title 1 (One)",
-    description: "Description 1 (One)",
-  },
-  {
-    id: 2,
-    title: "Title 2 (Two)",
-    description: "Description 2 (Two)",
-  },
-  {
-    id: 3,
-    title: "Title 3 (Three)",
-    description: "Description 3 (Three)",
-  },
-]
+// const array = [
+//   {
+//     id: 1,
+//     title: "Title 1 (One)",
+//     description: "Description 1 (One)",
+//   },
+//   {
+//     id: 2,
+//     title: "Title 2 (Two)",
+//     description: "Description 2 (Two)",
+//   },
+//   {
+//     id: 3,
+//     title: "Title 3 (Three)",
+//     description: "Description 3 (Three)",
+//   },
+// ]
 class App extends Component {
 
   state = {
@@ -34,29 +36,29 @@ class App extends Component {
   //   }
   // }
 
-  addNews() 
-  {
-    console.log('Ekledim');
-    array.push({
-      id:4,
-      title:"Yeni Eleman",
-      description:"Eleman eklendi"
-    });
-    console.log(array);
-  }
+  // addNews() 
+  // {
+  //   console.log('Ekledim');
+  //   array.push({
+  //     id:4,
+  //     title:"Yeni Eleman",
+  //     description:"Eleman eklendi"
+  //   });
+  //   console.log(array);
+  // }
 
-  changeName(){
-    this.setState(
-      {
-        name : "Hello set state"
-      }
-    )
-  }
+  // changeName(){
+  //   this.setState(
+  //     {
+  //       name : "Hello set state"
+  //     }
+  //   )
+  // }
   render() {
-    const number = 12;
-    const isIt = true;
-    const title = "This is title";
-    const description = "This is description";
+    // const number = 12;
+    // const isIt = true;
+    // const title = "This is title";
+    // const description = "This is description";
     
     // return (
     //   <div className="container">
@@ -75,11 +77,13 @@ class App extends Component {
     //   </div>
     // );
     return (
-      <div className="container">
+      <div className="App">
 
-        <h1>{this.state.name}</h1>
-        {/* <Middleware array={array} addNews={this.addNews} /> */}
-        <button onClick={this.changeName.bind(this)}>Değiştir</button>
+        {/* <h1>{this.state.name}</h1>
+        // <Middleware array={array} addNews={this.addNews} />
+        <button onClick={this.changeName.bind(this)}>Değiştir</button> */}
+        <Counter/>
+        <Footer/>
       </div>
     );
   }
