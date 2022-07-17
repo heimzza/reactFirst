@@ -3,6 +3,12 @@ import PropTypes from 'prop-types'
 // rcc
 
 class Test extends Component {
+
+  // constructor(props)
+  // {
+  //   super();
+  //   console.info(props);
+  // }
   static propTypes = {
     newsData:PropTypes.shape(
       {

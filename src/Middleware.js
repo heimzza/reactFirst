@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Test from './Test'
+import Form from './Form'
 
 class Middleware extends Component {
 
@@ -25,6 +26,7 @@ class Middleware extends Component {
                 {
                     elements
                 }
+                <Form addNews={this.props.addNews}/>
             </div>
         )
     }
